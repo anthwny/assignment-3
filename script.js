@@ -20,13 +20,11 @@ function asymptoteFinder(m, n) {
     /* TODO cuz i aint doin this rn */
 
 }
+
 function piApproximation(n) {
     let approximation = 0;
     for (let i = 0; i < n; i++) {
-        approximation += (Math.pow(-1, n) / (2*n + 1));
+        approximation += 4*(Math.pow((-1), i) / (2*i + 1))
     }
-    approximation *= 4;
     return approximation;
 }
-
-console.log(piApproximation(1000000))
