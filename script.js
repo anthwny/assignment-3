@@ -11,14 +11,17 @@ function cosineLaw(a, b, C) {
 }
 
 function asymptoteFinder(m, n) {
+    const asymptoteType = ["Linear", "Quadratic", "Cubic", "Quartic", "Quintic", "Sextic", "Septic", 
+    "Octic", "Nonic", "Decic"];
     if (m == n) {
-        return "The asymptote is horizontal"
+        return "The asymptote is horizontal";
     }
     else if (n > m) {
-        return "The asymptote is the x-axis"
+        return "The asymptote is the x-axis";
     }
-    /* TODO cuz i aint doin this rn */
-
+    else if (m > n) {
+        return "The asymptote is" + asymptoteType[m-n-1];
+    }
 }
 
 function piApproximation(n) {
