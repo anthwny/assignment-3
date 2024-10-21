@@ -20,9 +20,13 @@ function asymptoteFinder(m, n) {
         return "The asymptote is the x-axis";
     }
     else if (m > n) {
-        return "The asymptote is" + asymptoteType[m-n-1];
+        return "The asymptote is " + asymptoteType[m-n-1];
+    }
+    else {
+        return "bruh";
     }
 }
+console.log(asymptoteFinder(3,2));
 
 function piApproximation(n) {
     let approximation = 0;
