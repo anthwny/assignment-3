@@ -1,7 +1,7 @@
-let radians = True
+let radians = true
 
 function cosineLaw(a, b, C) {
-    if (radians == True) {
+    if (radians == true) {
         cosineValue = Math.cos(C);
     }
     else {
@@ -26,7 +26,6 @@ function asymptoteFinder(m, n) {
         return "bruh";
     }
 }
-console.log(asymptoteFinder(3,2));
 
 function piApproximation(n) {
     let approximation = 0;
