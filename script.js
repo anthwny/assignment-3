@@ -34,3 +34,21 @@ function piApproximation(n) {
     }
     return approximation;
 }
+
+document.getElementById("cos-button").addEventListener("click", function(){ 
+    let cosA = parseInt(document.getElementById("input-a").value);
+    let cosB = parseInt(document.getElementById("input-b").value);
+    let cosC = parseInt(document.getElementById("input-C").value);
+    document.getElementById("cos-result").value = cosineLaw(cosA, cosB, cosC);
+    });
+
+document.getElementById("asymp-button").addEventListener("click", function(){ 
+    let asympM = parseInt(document.getElementById("input-m").value);
+    let asympN = parseInt(document.getElementById("input-asymp-n").value);
+    document.getElementById("asymp-result").value = asymptoteFinder(asympM, asympN);
+    });
+    
+document.getElementById("pi-button").addEventListener("click", function(){ 
+    let piN = parseInt(document.getElementById("input-pi-n").value);
+    document.getElementById("pi-result").value = piApproximation(piN);
+});

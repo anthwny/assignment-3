@@ -26,7 +26,7 @@
                     <label for="input-C">Angle C</label>
                     <input type="number" class="form-control" id="input-C" placeholder="Angle">
                 </div>
-                <button type="submit" class="btn btn-primary mb-2">Calculate</button>
+                <button type="button" class="btn btn-primary mb-2" id="cos-button">Calculate</button>
                 <div class="form-group">
                     <label for="cos-result">Side c (Result)</label>
                     <input type="number" class="form-control" id="cos-result" placeholder="Result" disabled>
@@ -46,10 +46,10 @@
                     <label for="input-asymp-n">n Value</label>
                     <input type="number" class="form-control" id="input-asymp-n" placeholder="Polynomial degrees of the denominator">
                 </div>
-                <button type="submit" class="btn btn-primary mb-2">Calculate</button>
+                <button type="button" class="btn btn-primary mb-2" id = asymp-button>Calculate</button>
                 <div class="form-group">
                     <label for="asymp-result">Asymptote Type (Result)</label>
-                    <input type="number" class="form-control" id="asymp-result" placeholder="Result" disabled>
+                    <input class="form-control" id="asymp-result" placeholder="Result" disabled>
                 </div>
             </form>
         </div>
@@ -62,13 +62,13 @@
                     <label for="input-pi-n">n Value</label>
                     <input type="number" class="form-control" id="input-pi-n" placeholder="Amount of precision">
                 </div>
-                <button type="submit" class="btn btn-primary mb-2">Calculate</button>
+                <button type="button" class="btn btn-primary mb-2" id="pi-button">Calculate</button>
                 <div class="form-group">
-                    <label for="asymp-result">Pi Approximation (Result)</label>
-                    <input type="number" class="form-control" id="asymp-result" placeholder="Result" disabled>
+                    <label for="pi-result">Pi Approximation (Result)</label>
+                    <input type="number" class="form-control" id="pi-result" placeholder="Result" disabled>
                 </div>
             </form>
         </div>
-    </div>
+        <script src="./script.js"></script>
 </body>
 </html>
