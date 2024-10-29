@@ -1,7 +1,16 @@
-let radians = true
+document.getElementById("radian-or-degree-button").addEventListener("click", function(){
+    let button = document.getElementById("radian-or-degree-button")
+    if (button.innerHTML == "Degrees") {
+        button.innerHTML = "Radians";
+    }
+    else if (button.innerHTML == "Radians") {
+        button.innerHTML = "Degrees";
+    }
+})
 
 function cosineLaw(a, b, C) {
-    if (radians == true) {
+    let radianOrDegree = document.getElementById("radian-or-degree-button").innerHTML
+    if (radianOrDegree == 'Radians') {
         cosineValue = Math.cos(C);
     }
     else {
@@ -23,7 +32,7 @@ function asymptoteFinder(m, n) {
         return "The asymptote is " + asymptoteType[m-n-1];
     }
     else {
-        return "bruh";
+        return "Error";
     }
 }
 
@@ -34,6 +43,8 @@ function piApproximation(n) {
     }
     return approximation;
 }
+
+/* Event listeners in order to communicate with HTML */
 
 document.getElementById("cos-button").addEventListener("click", function(){ 
     let cosA = parseInt(document.getElementById("input-a").value);
@@ -52,3 +63,4 @@ document.getElementById("pi-button").addEventListener("click", function(){
     let piN = parseInt(document.getElementById("input-pi-n").value);
     document.getElementById("pi-result").value = piApproximation(piN);
 });
+
