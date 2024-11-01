@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="assets/nerd.png">
     <title>Calculations</title>
 </head>
+
 <body>
-    <div class="form-container">
+    <div class="main">
         <!-- Cosine law section -->
         <div class="box">
             <form>
                 <h1>Cosine Law</h1>
                 <div class="form-group">
-                    <label for="input-a">Side a</label>
-                    <input type="number" class="form-control" id="input-a" placeholder="First length">
+                    <label for="cos-a">Side a</label>
+                    <input type="number" class="form-control" id="cos-a" placeholder="First length">
                 </div>
                 <div class="form-group">
-                    <label for="input-b">Side b</label>
-                    <input type="number" class="form-control" id="input-b" placeholder="Second length">
+                    <label for="cos-b">Side b</label>
+                    <input type="number" class="form-control" id="cos-b" placeholder="Second length">
                 </div>
                 <div class="form-group">
-                    <label for="input-C">Angle C</label>
-                    <input type="number" class="form-control" id="input-C" placeholder="Angle">
+                    <label for="cos-C">Angle C</label>
+                    <input type="number" class="form-control" id="cos-C" placeholder="Angle">
                 </div>
                 <button type="button" class="btn btn-secondary mb-2" id="radian-or-degree-button">Radians</button>
                 <button type="button" class="btn btn-primary mb-2" id="cos-button">Calculate</button>
@@ -41,14 +44,16 @@
             <form>
                 <h1>Asymptote Finder</h1>
                 <div class="form-group">
-                    <label for="input-m">m Value</label>
-                    <input type="number" class="form-control" id="input-m" placeholder="Polynomial degrees of the numerator">
+                    <label for="asymp-m">m Value</label>
+                    <input type="number" class="form-control" id="asymp-m"
+                        placeholder="Polynomial degrees of the numerator">
                 </div>
                 <div class="form-group">
-                    <label for="input-asymp-n">n Value</label>
-                    <input type="number" class="form-control" id="input-asymp-n" placeholder="Polynomial degrees of the denominator">
+                    <label for="asymp-n">n Value</label>
+                    <input type="number" class="form-control" id="asymp-n"
+                        placeholder="Polynomial degrees of the denominator">
                 </div>
-                <button type="button" class="btn btn-primary mb-2" id = asymp-button>Calculate</button>
+                <button type="button" class="btn btn-primary mb-2" id=asymp-button>Calculate</button>
                 <div class="form-group">
                     <label for="asymp-result">Asymptote Type (Result)</label>
                     <input class="form-control" id="asymp-result" placeholder="Result" disabled>
@@ -61,8 +66,8 @@
             <form>
                 <h1>Gregory-Leibniz Pi Approximation</h1>
                 <div class="form-group">
-                    <label for="input-pi-n">n Value</label>
-                    <input type="number" class="form-control" id="input-pi-n" placeholder="Amount of precision">
+                    <label for="pi-n">n Value</label>
+                    <input type="number" class="form-control" id="pi-n" placeholder="Amount of precision">
                 </div>
                 <button type="button" class="btn btn-primary mb-2" id="pi-button">Calculate</button>
                 <div class="form-group">
@@ -73,4 +78,5 @@
         </div>
         <script src="./script.js"></script>
 </body>
+
 </html>
